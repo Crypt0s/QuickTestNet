@@ -56,4 +56,7 @@ killall dnsmasq
 tmux new-window -tAttack:2 -n 'DNSMasq' "dnsmasq -p 0 -d -C /tmp/dnsmasq_tmp.conf"
 
 cd fakedns/
-tmux new-window -tAttack:3 -n 'FakeDNS' "python3 -c fakedns.py dns.conf.example"
+tmux new-window -tAttack:3 -n 'FakeDNS' "python3 fakedns.py -c dns.conf.example"
+
+# attach to the tmux session we built.
+tmux attach -t Attack
