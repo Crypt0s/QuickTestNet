@@ -1,3 +1,8 @@
+# BEFORE YOU USE THIS PROJECT
+clone this repository with the following command:
+`git clone --recursive https://github.com/crypt0s/QuickTestNet.git`
+
+
 # QuickTestNet
 Throw up a quick WiFi Access Point from your Linux OS to do further testing of a target device
 
